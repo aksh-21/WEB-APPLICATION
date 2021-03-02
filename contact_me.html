@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="FILL THE USERS FORM" />
+<meta name=author content="AKSHAY THAKUR" />
+<meta name=keywords content="FORMS, USER FORMS" />
+<meta charset ="UTF-8" />
+<meta http-equiv ="refresh" content=30 />
+    </HEAD>
+    <BODY>
+
+      <H1> MY CONTACT:</H1>
+      <HR size="5" noshade>
+      <SECTION>
+        <h3 >PHONE NUMBER:</h3>
+        8351806468
+        <H3>
+          ADDRESS:
+        </H3>
+        VPO BAHOT KASOL TEHSIL SADAR DISTT. BILASPUR HIMACHAL 174012
+      <H3>EMAIL ADDRESS:</H3>
+      akshay835180468@gmail.com
+      </SECTION>
+      <section>
+        <!-- CREATING A FORM
+         GET METHOD:FORM VALUES(SUBMITTED FORM DATA) ARE VISIBLE IN THE ADDRESS BAR/URL OF THE NEW BROWSER TAB
+         POST METHODE: FORM VALUES WILL NOT BE VISIBLE ON THE ADDRESS BAR
+         Method attribute specifies the HTTP method to be used when submittinG the form data...-->
+      <hr size=3px noshade >
+      <!-- action attribute specifies the action to be performed when the form is submitted-->
+         <form   action="MY_FIRST_WEB_PAGE" method="post" target=_self autocomplete="on" nonvalidate>
+           <!-- AUTOCOMPLETE HELPS TO COMPLETE VALUES BASED ON THAT VALUES THAT THE USER HAS ENTERD BEFORE-->
+           <!-- name attribute help us to submit what so ever is input , necessary to submit data-->
+        <fieldset STYLE="color:BLACK;background-color:pink;font-style:italic">
+        <legend>
+          USERS INFO....
+        </legend><br />
+           <label for="fname"> FIRST NAME:</label><br>
+          <!-- target attribute helps to indicate  where to display the final action performed over data-->
+          <input type="text" id="fname" name="fname"  value="AKSHAY">
+          <br><br />
+          <label for="lname"> LAST NAME:</label><br>
+          <input type="text" id="lname" name="lname" value="THAKUR">
+          <br><br />
+          <label for="mail"> CREATE MAIL ID:</label><BR>
+          <input type="text" id="mail" name="mail" value="akshay831806468@gmail.com">
+          <br><br />
+
+      <!-- DISPLAYING A SET OF OPTIONS(CAN BE OPTED OR NOT)-->
+        ENTER THE HOME STATE:<BR>
+        <input list="STATES">
+        <datalist id="STATES">
+        <option value=DELHI>
+        <option value="HIMACHAL PRADESH">
+        <option value="HARYANA">
+        <option value="UTTAR PRADESH">
+        <option value="TAMIL NADU">
+        </datalist>
+        <BR ><br />
+          <label for="pass"> ENTER PASSWORD</label><br>
+          <input type="password" id="pass" name="pass"><br>
+          <br />
+          SELECT YOR GENDER:<BR><br />
+          <input type="radio" id="male" name=gender value=MALE >
+          <label for =male>MALE</label><br>
+
+          <input type="radio" id="female" name=gender value=FEMALE >
+          <label for=female>FEMALE</label><br>
+
+          <input type= radio id="other" name=gender value=OTHER >
+          <label for=other> OTHER</label><br >
+          <br />
+          <label for=DOB>ENTER DOB:</label><BR />
+          <input type=date id=DOB name= DATE_OF_BIRTH max="2004-01-01" min="1998-01-01"/><BR />
+          <!-- SELECT ELEMENT DEFINES A DROP DOWN LIST--><br />
+          <label for="DEPARTMENT"> CHOOSE DEPARTMENT:</label><BR />
+          <!-- select element helps us to select from choices , we can select  multiple choices using multiple attribute-->
+          <SELECT id="DEPARTMENT" name=DEAPARTMENT SIZE=1 multiple>
+
+            <option value="computers">COMPUTER SCINECE</option>
+            <option value=" MECHANICAL">
+            MECHANICAL'S</option>
+            <OPTION value="chemical">CHEMICAL </OPTION>
+              <OPTION VALUE="ELECTRONICS" SELECTED> ELECTRONICS</OPTION>
+
+          </SELECT>
+
+          <BR /><br />
+
+          <label for="fav_color">SELECT YOUR FAVOURITE COLOR:</label>
+          <input type=color id=fav_color value=#f1f1f1 /><br />
+          <br />
+           <!-- INPUT TO THE TEXT AREA..MULTIPLES LINES TEXT-->
+           WRITE YOUR REVIEWS HERE....<BR />
+           <textarea name="message" rows="10" cols="50">INPUT THE TEXT HERE..</textarea><BR /><br />
+           <!-- ROWS ATTRIBUTE SPECFIES THE NUMBER OF LINES IN THE TEXT AND COLUMNS  ATTRIBUTE SPCIFIES THE WIDTH OF THE TEXT AREA-->
+            <!-- SIMILARLY WE CAN HAVE THE WIDTH AND LENGTH ATTRIBUTE USED WITH TEXTAREA ELEMENT TO SPECIFY THW WIDHT AND HEIGHT OF TEXT_AREA-->
+          <input type="submit" value="SUBMIT">
+          <input type="reset" value="RESET" ><BR /><BR />
+          <!-- SIMILARLY WE CAN HAVE A CHECK BOX TO SELECT MULTIPLE ITEMS-->
+          <BUTTON type="button" onclick="alert('HELLO USER SOON YOU WILL FIND ACTION ON THIS CLICK')"> CLICK ME</BUTTON>
+        </fieldset>
+        </form>
+
+        </section>
+
+      </BODY>
+  </HTML>
